@@ -36,9 +36,10 @@ class Sugarcane extends Crop {
   }
 }
 
-module.exports.Wheat = {Wheat};
-module.exports.Sugarcane = {Sugarcane};
-module.exports.Crop = {Crop};
-
 // 1 EXPORT
-// module.exports = { Wheat, Sugarcane, Crop};
+module.exports = { Wheat, Sugarcane, Crop};
+
+// // SEPARATED EXPORTS
+// module.exports.Wheat = {Wheat};
+// module.exports.Sugarcane = {Sugarcane};
+// module.exports.Crop = {Crop};

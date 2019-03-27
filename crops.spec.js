@@ -1,9 +1,10 @@
-// 1 EXPORT
-// const {Wheat, Sugarcane, Crop} = require('./crops');
+// 1 IMPORT
+const {Wheat, Sugarcane, Crop} = require('./crops');
 
-const {Wheat} = require('./crops').Wheat;
-const {Sugarcane} = require('./crops').Sugarcane;
-const {Crop} = require('./crops').Crop;
+// // SEPARATED IMPORTS
+// const {Wheat} = require('./crops').Wheat;
+// const {Sugarcane} = require('./crops').Sugarcane;
+// const {Crop} = require('./crops').Crop;
 
 test('A crop can store its area size', () => {
   const crop = new Crop(12345);
