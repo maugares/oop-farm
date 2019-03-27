@@ -2,6 +2,8 @@ const {Farm} = require('./index');
 const {Wheat, Sugarcane, Crop} = require('./crops');
 const {Animal, Cow, Pig, Horse} = require('./animals');
 
+// Test: farm can be created and can have a name
+
 test('A new Farm can be created', () => {
   const farm = new Farm();
   expect(farm).toBeTruthy();
