@@ -1,17 +1,26 @@
 class Farm {
   constructor(name) {
-    this.name = name
-    this.crops = []
+    this.name = name;
+    this.crops = [];
+    this.animals = [];
   }
 
   addCrop(crop) {
-    this.crops.push(crop)
+    this.crops.push(crop);
+  }
+
+  addAnimal(animal) {
+    this.animals.push(animal);
   }
 
   calculateIncome() {
-    return this.crops
+    const cropValue = this.crops
       .map(crop => crop.getYieldInEuros())
-      .reduce((totalIncome,cropIncome) => totalIncome + cropIncome, 0)
+      .reduce((totalIncome, cropIncome) => totalIncome + cropIncome, 0)
+    const animalValue = this.animals
+      .map(animal => animal.getValueInEuros())
+      .reduce((totalIncome, animalIncome) => totalIncome + animalIncome, 0)
+    return cropValue + animalValue;
   }
 }
 
