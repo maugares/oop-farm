@@ -16,8 +16,8 @@ class Animal {
 class Cow extends Animal {
   constructor(age) {
     super(age);
-    this.yield = 1.5;
-    this.maxWeight = 1200;
+    this.yield = 1.5;           // +1.5kg per day
+    this.maxWeight = 1200;      // max weight = 1200
     this.priceKg = 5;           // 5€/kg    
   }
 }
@@ -25,8 +25,8 @@ class Cow extends Animal {
 class Pig extends Animal{
   constructor(age) {
     super(age);
-    this.yield = 2.3;
-    this.maxWeight = 700;
+    this.yield = 2.3;           // +2.3kg per day
+    this.maxWeight = 700;       // max weight = 700
     this.priceKg = 10;          // 10€/kg        
   }
 }
@@ -34,8 +34,8 @@ class Pig extends Animal{
 class Horse extends Animal{
   constructor(age) {
     super(age);
-    this.yield = 1.7;    
-    this.maxWeight = 1000;
+    this.yield = 1.7;          // +1.7kg per day
+    this.maxWeight = 1000;     // max weight = 1000
     this.priceKg = 4;          // 4€/kg   
   }
 }
